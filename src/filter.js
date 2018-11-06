@@ -1,3 +1,6 @@
+import React, {Component} from 'react';
+import './App.css';
+//import data from './dataObject'
 const data=[
   { city: 'Amsterdam',
     persons: 6,
@@ -28,3 +31,31 @@ const data=[
   }
 ]
 
+export default class Filter extends Component {
+constructor(props) {
+  super(props);
+  this.state = {value: ''};
+}
+
+updateSelection(event) {
+  this.setState({value: event.target.value})
+}
+
+
+
+
+render() {
+  return (
+    <div className="App">
+    <select value={this.state.value} onChange={this.updateSelection}>
+    <option value="">-- Pick A City --</option>
+    {data.map(cities => {
+      return (
+        <option value={cities.city}>{cities.city}</option>
+      )
+    })}
+    </select>
+    </div>
+  );
+}
+}
