@@ -45,12 +45,10 @@ updateSelection(event) {
   this.setState({value: event.target.value});
 }
 
-sendCity = () => {
+sendCity = (city) => {
   this.props.dispatch({
     type: 'SEND_CITY',
-    payload: {
-      city: this.state.city
-    }
+    payload: city
   })
 }
 
@@ -68,7 +66,7 @@ render() {
     })}
     </select>
 
-   <button onClick={this.sendCity}>Submit</button>
+   <button onClick={()=>this.sendCity(this.state.value)}>Submit</button>
     </div>
   );
 }
