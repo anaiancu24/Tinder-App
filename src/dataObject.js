@@ -1,4 +1,4 @@
-const data=[
+export const data=[
   { city: 'Amsterdam',
     persons: 6,
     price: 900,

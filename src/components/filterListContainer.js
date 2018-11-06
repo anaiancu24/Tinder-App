@@ -1,6 +1,7 @@
 import * as React from 'react'
 import FilterList from './filterList'
 import { connect } from 'react-redux'
+import city from '../reducers/city';
 
 class FilterListContainer extends React.Component {
   selectedRoom = (id) => {
@@ -11,14 +12,15 @@ class FilterListContainer extends React.Component {
   }
 
   render() {
-    return <FilterList rooms={this.props.rooms} selectedRoom={this.selectedRoom} />
+    return <FilterList rooms={this.props.rooms} selectedRoom={this.selectedRoom} city={this.props.city}/>
   }
 
 }
 
 const mapStateToProps = (state) => {
   return {
-    rooms: state.rooms
+    rooms: state.rooms,
+    city: state.city
   }
 }
 
