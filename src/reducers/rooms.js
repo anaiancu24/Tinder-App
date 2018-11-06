@@ -27,6 +27,7 @@ const initialState=[
     userbio: 'Rexed dude, who doesnt like cleaning'
   }
 ]
+
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
   case 'SELECT_ROOM':
@@ -38,4 +39,5 @@ const reducer = (state = initialState, action = {}) => {
     return state
   }
 }
+
 export default reducer
