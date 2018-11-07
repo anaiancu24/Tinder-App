@@ -4,15 +4,15 @@ import { connect } from 'react-redux'
 import city from '../reducers/city';
 
 class FilterListContainer extends React.Component {
-  selectedRoom = (id) => {
-    this.props.dispatch({
-      type: 'SELECT_ROOM',
-      payload: id
-    })
-  }
+
 
   render() {
-    return <FilterList rooms={this.props.rooms} selectedRoom={this.selectedRoom} city={this.props.city}/>
+    return (
+    <div>
+      <Filter />
+      <FilterList rooms={this.props.rooms}/>
+      </div>
+    )
   }
 
 }

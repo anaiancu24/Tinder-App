@@ -6,7 +6,8 @@ export const data=[
     username: 'James',
     userphoto: 'picture',
     userrating: 1,
-    userbio: 'Rexed dude, who doesnt like cleaning'
+    userbio: 'Rexed dude, who doesnt like cleaning',
+    id:1
   },
   { city: 'London',
     persons: 4,
@@ -15,7 +16,8 @@ export const data=[
     username: 'Greta',
     userphoto: 'picture',
     userrating: 1,
-    userbio: 'Rexed dude, who doesnt like cleaning'
+    userbio: 'Rexed dude, who doesnt like cleaning',
+    id: 2
   },
   { city: 'Helsinki',
     persons: 3,
@@ -24,7 +26,8 @@ export const data=[
     username: 'Tina',
     userphoto: 'picture',
     userrating: 1,
-    userbio: 'Rexed dude, who doesnt like cleaning'
+    userbio: 'Rexed dude, who doesnt like cleaning',
+    id: 3
   }
 ]
 

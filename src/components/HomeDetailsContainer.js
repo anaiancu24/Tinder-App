@@ -4,19 +4,23 @@ import HomeDetails from './HomeDetails'
 
 class HomeDetailsContainer extends React.Component {
     render() {
-        const home = this.props.data
+        //const rooms = this.props.data
 
-        return <HomeDetails home={home} />
-    }
+        return (
+        <div>
+            <HomeDetails  />
+        <button>REQUEST</button>
+        <button>IGNORE</button>
+
+        </div>
+
+        )}
 }
 
 const mapStateToProps = (state) => {
-    if (state.selectedUser !== null) {
-        return {
-          home: state.data.find(home => home.id === state.selectedRoom)
-        }
-      }
-      return {}
+    return {
+      rooms: state.rooms
     }
+  }
 
     export default connect(mapStateToProps)(HomeDetailsContainer)
