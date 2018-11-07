@@ -26,7 +26,8 @@ render() {
   return (
     <div className="App">
     <select value={this.state.value} onChange={this.updateSelection}>
-    <option value="">-- Pick A City --</option>
+    <option value='' >-- Pick A City --</option>
+
     {data.map(cities => {
       return (
         <option value={cities.city}>{cities.city}</option>

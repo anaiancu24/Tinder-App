@@ -7,7 +7,7 @@ export default function FilterList(props) {
     <div>
       <h1>Filter Results</h1>
       <ul>
-        {props.rooms.map(room =>
+        {props.rooms !== null ? props.rooms.map(room =>
           <li key={room.id} className="rooms">
             <Link to={`/room`}>
               {Object.values(room).map(apt => <li>{apt}</li>
@@ -15,7 +15,7 @@ export default function FilterList(props) {
               )}
             </Link>
           </li>
-        )}
+        ):null}
       </ul>
     </div>)
 }
