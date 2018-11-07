@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux'
-import pizzas from './pizzas'
+import rooms from './rooms'
+import city from './city'
 
 export default combineReducers({
-  pizzas: pizzas
+  rooms,
+  city
 })

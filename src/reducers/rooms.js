@@ -1,4 +1,4 @@
-export const data=[
+const initialState=[
   { city: 'Amsterdam',
     persons: 6,
     price: 900,
@@ -28,3 +28,16 @@ export const data=[
   }
 ]
 
+const reducer = (state = initialState, action = {}) => {
+  switch (action.type) {
+  case 'SELECT_ROOM':
+    return [
+      ...state,
+      action.payload
+    ]
+  default:
+    return state
+  }
+}
+
+export default reducer
