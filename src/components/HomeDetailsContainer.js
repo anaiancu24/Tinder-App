@@ -1,26 +1,33 @@
 import * as React from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import HomeDetails from './HomeDetails'
 
 class HomeDetailsContainer extends React.Component {
+
+boxalert = () => {
+return alert("Yeah, you wish! We're ofc completely booked")
+}
+
     render() {
-        //const rooms = this.props.data
 
         return (
-        <div>
-            <HomeDetails  />
-        <button>REQUEST</button>
-        <button>IGNORE</button>
+            <div>
+                <img src="https://cache.marriott.com/marriottassets/marriott/KULDT/kuldt-guestroom-0017-hor-clsc.jpg?interpolation=progressive-bilinear&" alt='home' height="200" width="300"/>
 
-        </div>
+                <HomeDetails rooms={this.props.rooms} />
+                <button onClick={this.boxalert()}>REQUEST</button>
+                <button>IGNORE</button>
 
-        )}
+            </div>
+
+        )
+    }
 }
 
 const mapStateToProps = (state) => {
     return {
-      rooms: state.rooms
+        rooms: state.rooms
     }
-  }
+}
 
-    export default connect(mapStateToProps)(HomeDetailsContainer)
+export default connect(mapStateToProps)(HomeDetailsContainer)
