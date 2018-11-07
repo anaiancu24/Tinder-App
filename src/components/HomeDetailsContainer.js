@@ -4,9 +4,7 @@ import HomeDetails from './HomeDetails'
 
 class HomeDetailsContainer extends React.Component {
 
-boxalert = () => {
-return alert("Yeah, you wish! We're ofc completely booked")
-}
+
 
     render() {
 
@@ -15,13 +13,16 @@ return alert("Yeah, you wish! We're ofc completely booked")
                 <img src="https://cache.marriott.com/marriottassets/marriott/KULDT/kuldt-guestroom-0017-hor-clsc.jpg?interpolation=progressive-bilinear&" alt='home' height="200" width="300"/>
 
                 <HomeDetails rooms={this.props.rooms} />
-                <button onClick={this.boxalert()}>REQUEST</button>
+                <button onClick={() => {this.boxalert()}}>REQUEST</button>
                 <button>IGNORE</button>
 
             </div>
 
         )
     }
+    boxalert = () => {
+        return alert("Yeah, you wish! We're ofc completely booked")
+        }
 }
 
 const mapStateToProps = (state) => {

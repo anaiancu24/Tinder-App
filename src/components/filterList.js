@@ -9,7 +9,7 @@ export default function FilterList(props) {
       <ul>
         {props.rooms.map(room =>
           <li key={room.id} className="rooms">
-            <Link to={`/rooms`}>
+            <Link to={`/room`}>
               {Object.values(room).map(apt => <li>{apt}</li>
 
               )}
