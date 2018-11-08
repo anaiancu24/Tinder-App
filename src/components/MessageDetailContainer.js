@@ -7,9 +7,10 @@ import DeclineButton from './declineButton'
 class MessageDetailContainer extends Component {
 
   render() {
+    console.log(this.props)
     return (
     <div className="message">
-      <MessageDetail message={this.props.viewMessage}/>
+      <MessageDetail message={this.props.messageId}/>
       <AcceptButton />
       <DeclineButton />
     </div>
@@ -20,8 +21,8 @@ class MessageDetailContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    message: state.message
+    messageId: state.requests.find(request => request.id === state.messageId)
   }
 }
 
-export default connect(mapStateToProps, )(MessageDetailContainer)
+export default connect(mapStateToProps)(MessageDetailContainer)

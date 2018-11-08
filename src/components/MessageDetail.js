@@ -1,6 +1,10 @@
 import * as React from 'react'
 
-export default function MessageDetail(message) {
+export default function MessageDetail({ message }) {
+    if(message === undefined){
+      return <h1>Message not found</h1>
+    }
+
     return (
     <div>
       <ul>
