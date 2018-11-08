@@ -6,8 +6,9 @@
  
 }
 body{
+  background-color: #FC8767;
+
   
-  background-color: #F1BE3E;
 }
 .body {
   position: fixed;
@@ -15,8 +16,9 @@ body{
   left: 0px;
   width: 50%;
   height: 100%;
-  background-color: #FC8767;
-  z-index: 1
+  background-color: #F1BE3E;
+  z-index: 1;
+  
 
 }
 
@@ -62,7 +64,7 @@ h2 {
   right: 90%;
   top:0%;
   font-size: 23px;
-  color: #F1BE3E
+  color: #FC8767;
 }
 
 .text2 {
@@ -73,7 +75,8 @@ h2 {
   right: 90%;
   top: 10%;
   font-size: 23px;
-  color: #FC8767;
+  color: #F1BE3E
+
 }
 
 .select-style {
@@ -86,4 +89,48 @@ h2 {
   font-size: 23px;
 }
 
+.dropdown {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  color: #FC8767;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  left: 2500%;
+  right: 120%;
+  top: 100%;
+}
 
+.filtertitle{
+  position: relative;
+  color: white;
+  margin-right: -43px;
+  margin-top: 110px;
+}
+
+ li.rooms {
+  border-style: solid;
+  border-width: 2px;
+border-color: #F1BE3E}
+
+.button2 {
+  font-family: 'Lato', sans-serif;
+
+  color: #ffffff;
+  font-size: 22px;
+  display: inline-block;
+  border-radius: 160px;
+  height: 39px;
+  width: 160px;
+  left: 0%;
+  margin-right: 20px;
+  margin-left: 70px;
+  margin-top: 100px;
+  position: relative;
+  background-color: rgba(211, 211, 211, 0)}
+
+  .picture {
+    height:500px;
+     width:700;
+     margin-left: -150px;
+  }

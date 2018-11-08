@@ -10,11 +10,11 @@ class HomeDetailsContainer extends React.Component {
 
         return (
             <div>
-                <img src="https://cache.marriott.com/marriottassets/marriott/KULDT/kuldt-guestroom-0017-hor-clsc.jpg?interpolation=progressive-bilinear&" alt='home' height="200" width="300"/>
+                <img className="picture" src="https://cache.marriott.com/marriottassets/marriott/KULDT/kuldt-guestroom-0017-hor-clsc.jpg?interpolation=progressive-bilinear&" alt='home' />
 
                 <HomeDetails rooms={this.props.rooms} />
-                <button onClick={this.boxalert}>REQUEST</button>
-                <button onClick={this.boxalert3}>IGNORE</button>
+                <button className = "button2" onClick={this.boxalert}>REQUEST</button>
+                <button className = "button2" onClick={this.boxalert3}>IGNORE</button>
 
             </div>
 

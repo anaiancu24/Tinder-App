@@ -31,7 +31,7 @@ class App extends Component {
       <header className="header">
                 <img className = "logo" src={hostme} alt="logo" />
                 </header>
-        <body>
+        <body className="homepage">
       <Route exact path="/" component={HomepageContainer} />
       </body>
 

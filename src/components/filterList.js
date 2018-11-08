@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 export default function FilterList(props) {
   return (
     <div>
-      <h1>Filter Results</h1>
+      <h1 className="filtertitle">Filter Results</h1>
       <ul>
         {props.rooms !== null ? props.rooms.map(room =>
           <li key={room.id} className="rooms">
             <Link to={`/room`}>
-              {Object.values(room).map(apt => <li>{apt}</li>
+              {Object.values(room).map(apt => <li className="room">{apt}</li>
 
               )}
             </Link>
