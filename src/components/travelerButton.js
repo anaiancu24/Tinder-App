@@ -8,7 +8,7 @@ class TravelerButton extends Component {
 
 render() {
   return (
-    <div className="travelerbutton">
+    <div className="button">
     <Link to={`/rooms`}>
     <button>Traveler</button>
     </Link>

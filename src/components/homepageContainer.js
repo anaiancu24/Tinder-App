@@ -9,7 +9,7 @@ class HomepageContainer extends Component {
   render() {
     return (
       <div>
-          <h1> WELCOME!!</h1>
+          <h1 className="title"> WELCOME!!</h1>
           <h2>Are you a traveller or a homeowner?</h2>
       <TravelerButton/>
       <HomeownerButton/>
