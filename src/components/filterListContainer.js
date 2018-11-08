@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import Filter from "./filter"
 
 class FilterListContainer extends React.Component {
- 
+
 
   render() {
     return (
