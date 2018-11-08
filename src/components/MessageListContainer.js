@@ -1,13 +1,17 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import MessageList from './MessageList'
+import {selectMessage} from '../actions/selectMessage'
 
 class MessageListContainer extends Component {
 
+
   render() {
     return (
-    <div>
-      <MessageList messages={this.props.messages}/>
+    <div className="messages">
+      <MessageList messages={this.props.requests}
+      // viewDetail={selectMessage()}
+      />
     </div>
     )
   }
@@ -16,8 +20,8 @@ class MessageListContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    messages: state.messages
+    requests: state.requests
   }
 }
 
-export default connect(mapStateToProps)(MessageListContainer)
+export default connect(mapStateToProps, {selectMessage})(MessageListContainer)
