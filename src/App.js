@@ -19,15 +19,21 @@ import MessageListContainer from './components/MessageListContainer';
 class App extends Component {
   render() {
     return (
+      <div>
+      
+          
       <div className="App">
       
-      <header className="header">
-                <img className = "logo" src={hostme} alt="logo" />
-                </header>
+   
 
       <BrowserRouter>
       <main>
+      <header className="header">
+                <img className = "logo" src={hostme} alt="logo" />
+                </header>
+        <body>
       <Route exact path="/" component={HomepageContainer} />
+      </body>
 
 <Route exact path="/rooms" component={FilterListContainer} />
 <Route exact path="/room" component={HomeDetailsContainer} />
@@ -41,6 +47,7 @@ class App extends Component {
         </main>
         </BrowserRouter>
 
+      </div>
       </div>
     );
   }

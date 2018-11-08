@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
 .App {
   text-align: center;
  
 }
+body{
+  
+  background-color: #F1BE3E;
+}
+.body {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  background-color: #FC8767;
+  z-index: 1
 
+}
 
 
 
@@ -13,19 +29,61 @@
   margin-top: 0px;
 }
 
-h1 {
-  font-size: 30px;
-  margin-top: 20px;
-  text-align: center;
-  color: red;
-}
+
 
 
 .button {
+  font-family: 'Lato', sans-serif;
+
+  color: #ffffff;
+  font-size: 22px;
   display: inline-block;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 50px;
+  border-radius: 160px;
+  height: 39px;
+  width: 160px;
+  left: 29%;
+  margin-right: 20px;
+  margin-left: 70px;
+  margin-top: 60px;
+  position: relative;
+  background-color: rgba(211, 211, 211, 0)}
+
+h2 {
+  margin-right: 650px;
+  margin-left: 650px;
+  margin-top: 100px;
+  margin-bottom: 10px
 
 }
+.text1 {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  left: -9%;
+  right: 90%;
+  top:0%;
+  font-size: 23px;
+  color: #F1BE3E
+}
+
+.text2 {
+  font-family: 'Lato', sans-serif;
+
+  position: relative;
+  left: 10%;
+  right: 90%;
+  top: 10%;
+  font-size: 23px;
+  color: #FC8767;
+}
+
+.select-style {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 10%;
+  right: 90%;
+  top: 10%;
+  font-size: 23px;
+}
+
 
