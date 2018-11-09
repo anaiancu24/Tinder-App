@@ -10,22 +10,11 @@ import hostme from './images/hostme.png'
 import MessageDetailContainer from './components/MessageDetailContainer';
 import MessageListContainer from './components/MessageListContainer';
 
-
-
-
-
-
-
 class App extends Component {
   render() {
     return (
-      <div>
-      
-          
-      <div className="App">
-      
-   
-
+      <div>     
+     <div className="App">
       <BrowserRouter>
       <main>
       <div className="header">
@@ -45,8 +34,8 @@ class App extends Component {
 
 
         </main>
-        </BrowserRouter>
 
+        </BrowserRouter>
       </div>
       </div>
     );
