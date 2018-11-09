@@ -24,7 +24,7 @@ updateSelection(event) {
 
 render() {
   return (
-    <div className="App">
+    <div className="select-style">
     <select className= "dropdown" value={this.state.value} onChange={this.updateSelection}>
     <option value='' >-- Pick A City --</option>
 

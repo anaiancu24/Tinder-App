@@ -14,7 +14,7 @@ render() {
     <div className="button">
         <Link to={`/homeowner`}>
 
-    <button>Home Owner</button>
+    <button className="button">Home Owner</button>
     </Link>
     </div>
   )
