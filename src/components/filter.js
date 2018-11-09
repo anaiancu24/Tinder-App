@@ -47,4 +47,3 @@ const mapStateToProps = (state) => {
 
 
 export default connect(mapStateToProps, {setCity})(Filter)
-

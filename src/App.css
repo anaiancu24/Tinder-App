@@ -1,10 +1,6 @@
 .App {
   text-align: center;
- 
 }
-
-
-
 
 .logo{
   width: 200px;
@@ -20,12 +16,9 @@ h1 {
   color: red;
 }
 
-
 .button {
   display: inline-block;
   margin-right: 30px;
   margin-left: 30px;
   margin-top: 50px;
-
 }
-
