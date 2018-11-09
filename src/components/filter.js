@@ -24,12 +24,13 @@ updateSelection(event) {
 
 render() {
   return (
-    <div className="App">
-    <select value={this.state.value} onChange={this.updateSelection}>
-    <option value="">-- Pick A City --</option>
+    <div className="select-style">
+    <select className= "dropdown" value={this.state.value} onChange={this.updateSelection}>
+    <option value='' >-- Pick A City --</option>
+
     {data.map(cities => {
       return (
-        <option value={cities.city}>{cities.city}</option>
+        <option className="option" value={cities.city}>{cities.city}</option>
       )
     })}
     </select>

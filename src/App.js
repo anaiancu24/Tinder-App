@@ -3,28 +3,43 @@ import './App.css';
 import Filter from './filter.js';
 import FilterListContainer from './components/filterListContainer'
 import { Route } from 'react-router-dom'
-//import HomeDetailsContainer from './components/HomeDetailsContainer';
-import { Provider } from 'react-redux'
-import store from './store'
-
-
+import {BrowserRouter} from 'react-router-dom'
+import HomeDetailsContainer from './components/HomeDetailsContainer';
+import HomepageContainer from './components/homepageContainer'
+import DashboardContainer from './components/DashboardContainer'
+import hostme from './images/hostme.png'
+import MessageDetailContainer from './components/MessageDetailContainer';
+import MessageListContainer from './components/MessageListContainer';
 
 
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-      <div className="App">
-<<<<<<< HEAD
-        <Filter/>
-        <FilterListContainer />
-=======
+      <div>
+     <div className="App">
+      <BrowserRouter>
       <main>
-        <Route path="/" component={FilterListContainer} />
+      <div className="header">
+                <img className = "logo" src={hostme} alt="logo" />
+                </div>
+
+      <Route exact path="/" component={HomepageContainer} />
+
+
+<Route exact path="/rooms" component={FilterListContainer} />
+<Route exact path="/room" component={HomeDetailsContainer} />
+<Route exact path="/homeowner" component={DashboardContainer} />
+<Route exact path="/message-list" component={MessageListContainer} />
+
+<Route exact path="/message" component={MessageDetailContainer} />
+
+
+
         </main>
->>>>>>> f6352c72c67b7484c67b44766bc8cc005097968d
+
+        </BrowserRouter>
       </div>
-      </Provider>
+      </div>
     );
   }
 }

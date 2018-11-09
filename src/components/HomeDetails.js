@@ -1,47 +1,23 @@
-import * as React from ‘react’
-import logo from ‘../logo.svg’
+import * as React from 'react'
+import room1 from '../images/room1.jpg'
+import room2 from '../images/room2.jpg'
+import room3 from '../images/room3.jpg'
+import room4 from '../images/room4.jpg'
+import room5 from '../images/room5.jpg'
+import room6 from '../images/room6.jpg'
+import room7 from '../images/room7.jpg'
+import room8 from '../images/room8.jpg'
+import room9 from '../images/room9.jpg'
+import room10 from '../images/room10.jpg'
 
 
+
+const random_images_array = [room1, room2, room3,room4,room5,room6,room7,room8,room9,room10 ];
 export default function HomeDetails() {
-  // const home=props.home
-  const homes=[
- { city: 'Amsterdam',
-      persons: 6,
-      price: 900,
-      description: '4 room appartment with view on the main canal and the Royal palace',
-      username: 'James',
-      userphoto: 'picture',
-      userrating: 1,
-      userbio: 'Rexed dude, who doesnt like cleaning',
-      id:1
-    },
-    { city: 'London',
-      persons: 4,
-      price: 1200,
-      description: 'Very small aprtment on the edge of the city. Huge garden.',
-      username: 'Greta',
-      userphoto: 'picture',
-      userrating: 1,
-      userbio: 'Rexed dude, who doesnt like cleaning',
-      id: 2
-    },
-    { city: 'Helsinki',
-      persons: 3,
-      price: 400,
-      description: 'Its huge, its great, its fantatsic',
-      username: 'Tina',
-      userphoto: 'picture',
-      userrating: 1,
-      userbio: 'Rexed dude, who doesnt like cleaning',
-      id: 3
-    }
-  ]
+
    return (
-       <div>
-       <img src = {logo} alt='portrait'/>
-
-
+       <div className="room-details">
+       <img className="picture" src={random_images_array[Math.floor(Math.random() * 10)]} alt="randompicture"/>
        </div>
    )
 }
->>>>>>> 7773495137b8fc2ca25f0310a8dfde5a2d9dd285
