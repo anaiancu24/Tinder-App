@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Filter from './filter.js';
 import FilterListContainer from './components/filterListContainer'
 import { Route } from 'react-router-dom'
 import {BrowserRouter} from 'react-router-dom'
@@ -20,23 +19,15 @@ class App extends Component {
       <BrowserRouter>
       <main>
       <div className="header">
-                <img className = "logo" src={hostme} alt="logo" />
-                </div>
-
-      <Route exact path="/" component={HomepageContainer} />
-
-
-<Route exact path="/rooms" component={FilterListContainer} />
-<Route exact path="/room" component={HomeDetailsContainer} />
-<Route exact path="/homeowner" component={DashboardContainer} />
-<Route exact path="/message-list" component={MessageListContainer} />
-
-<Route exact path="/message" component={MessageDetailContainer} />
-
-
-
+        <img className = "logo" src={hostme} alt="logo" />
+      </div>
+          <Route exact path="/" component={HomepageContainer} />
+          <Route exact path="/rooms" component={FilterListContainer} />
+          <Route exact path="/room" component={HomeDetailsContainer} />
+          <Route exact path="/homeowner" component={DashboardContainer} />
+          <Route exact path="/message-list" component={MessageListContainer} />
+          <Route exact path="/message" component={MessageDetailContainer} />
         </main>
-
         </BrowserRouter>
       </div>
       </div>

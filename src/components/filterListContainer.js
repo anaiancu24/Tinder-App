@@ -2,6 +2,7 @@ import * as React from 'react'
 import FilterList from './filterList'
 import { connect } from 'react-redux'
 import city from '../reducers/city';
+import Filter from './filter'
 
 class FilterListContainer extends React.Component {
 
