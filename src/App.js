@@ -28,12 +28,12 @@ class App extends Component {
 
       <BrowserRouter>
       <main>
-      <header className="header">
+      <div className="header">
                 <img className = "logo" src={hostme} alt="logo" />
-                </header>
-        <body className="homepage">
+                </div>
+        
       <Route exact path="/" component={HomepageContainer} />
-      </body>
+      
 
 <Route exact path="/rooms" component={FilterListContainer} />
 <Route exact path="/room" component={HomeDetailsContainer} />

@@ -10,7 +10,9 @@ class HomepageContainer extends Component {
 
   render() {
     return (
-      <div id="background" className="body">
+      <div className="background">
+      <body>
+      <div className="body">
         <header className="header">
           <img className="logo" src={hostme} alt="logo" />
         </header>
@@ -27,9 +29,12 @@ class HomepageContainer extends Component {
           </div>
           
         </div>
+        
 
         <TravelerButton />
         <HomeownerButton />
+      </div>
+      </body>
       </div>
     )
   }
