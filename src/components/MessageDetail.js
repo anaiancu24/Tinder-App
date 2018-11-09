@@ -1,4 +1,6 @@
 import * as React from 'react'
+import '../style/ho.css';
+import '../style/ho-message.css';
 
 export default function MessageDetail({ message }) {
     if(message === undefined){
@@ -9,10 +11,10 @@ export default function MessageDetail({ message }) {
     <div>
       <ul>
         {<li key = {message.id} className="message">
-            {message.date}
-            {message.from}
-            {message.subject}
-            {message.body}
+            <div className="datefrom">{message.date}
+            {message.from}</div>
+            <div className="subject">{message.subject}</div>
+            <div className="messagebody">{message.body}</div>
           </li>
         }
       </ul>

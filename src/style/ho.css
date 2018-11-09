@@ -1,0 +1,46 @@
+/* General styling */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+}
+
+h1, h2 {
+  font-size: 36px;
+  color: #F1BE3E;
+}
+
+h3 {
+  font-size: 30px;
+  color: #FC8767;
+}
+
+h4, h5 {
+  font-size: 20px;
+  color: #333;
+}
+
+h6 {
+  font-size: 18px;
+  color: #333;
+}
+
+h7 {
+  font-size: 14px;
+  color: #333;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+div .container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  background-color: grey;
+}

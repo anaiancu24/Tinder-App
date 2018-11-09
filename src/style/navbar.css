@@ -1,0 +1,10 @@
+/* Styling for navigation bar */
+
+div .navbar {
+  height: 41px;
+  margin: 18px 0 0 0;
+}
+
+div .navbar .icon-navbar {
+  margin: 0 0 0 15px;
+}
